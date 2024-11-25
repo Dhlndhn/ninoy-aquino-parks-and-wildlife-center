@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninoy Aquino Parks & Wildlife Center</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="brand">Roots & Routes</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="#" onclick="showTab('home')">Home</a>
+        <a href="#"onclick="showTab('exp')">Explore</a>
+        <a href="#"onclick="showTab('fac')">Facilities</a>
+        <a href="#"onclick="showTab('pro')">Promotional Video</a>
+        <a href="#"onclick="showTab('act')">Activities</a>
+        <a href="#"onclick="showTab('vis')">Visitor's Gallery</a>
+        <a href="#"onclick="showTab('res')">Reservations</a>
+        <a href="#"onclick="showTab('con')">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="tab-content active">
+  <section class="home">
+    <video class="video-slide active" src="videos/1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="videos/2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="videos/3.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="videos/4.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="videos/5.mp4" autoplay muted loop></video>
+    <div class="content active">
+      <h1>Ninoy Aquino Parks<br><span>& Wildlife Center</span></h1>
+      <p>Named after the prominent political figure Benigno “Ninoy” Aquino Jr., this urban oasis provides a recreational space and plays a crucial role in wildlife conservation and education.</p>
+      <a href="#" id="about-us-btn">About Us</a>
+    </div>
+    <div class="content">
+      <h1>Serene Escape<br><span>in Quezon City</span></h1>
+      <p>Visitors to the Ninoy Aquino Parks and Wildlife Center can explore its lush landscapes, which include a lagoon, botanical gardens, and a wildlife rescue center dedicated to rehabilitating injured and orphaned animals.</p>
+      
+    </div>
+    <div class="content">
+      <h1>Ninoy Aquino Parks<br><span>& Wildlife Center</span></h1>
+      <p>A vital sanctuary for both indigenous flora and fauna, showcasing the rich biodiversity of Quezon City.</p>
+      
+    </div>
+    <div class="content">
+      <h1>A Protected Area<br><span>in Quezon City</span></h1>
+      <p>This place invites locals and tourists to connect with nature while promoting awareness about wildlife conservation efforts.</p>
+      
+    </div>
+    <div class="content">
+      <h1>Ninoy Aquino Parks<br><span>& Wildlife Center</span></h1>
+      <p>Visiting during the cooler months, offers a more pleasant experience as temperatures are milder, making it ideal for walking around the park and enjoying outdoor activities.</p>
+      
+    </div>
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-google"></i></a>
+   </div> 
+   <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+  </div> 
+  </section>
+</div>
+
+<div id="about-us-panel" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>About Us</h2>
+    <p>Welcome to the Ninoy Aquino Parks and Wildlife Center, your gateway to nature in the heart of Quezon City!</p>
+    <p>Managed by the Department of Environment and Natural Resources (DENR), the Ninoy Aquino Parks and Wildlife Center (NAPWC) is a 23.85-hectare ecological sanctuary that serves as a haven for Philippine flora and fauna. Established in 1954, it is named in honour of the late Senator Benigno "Ninoy" Aquino Jr., reflecting his advocacy for environmental preservation.</p>
+    <p>Located just a stone’s throw away from Metro Manila's bustling urban life, the park offers a serene retreat where visitors can reconnect with nature. The center is home to diverse ecosystems, including a man-made lagoon, tree-lined paths, and open green spaces that showcase the country’s rich biodiversity.</p>
+    <p>The NAPWC is more than just a park—it is a commitment to preserving the natural heritage of the Philippines. Whether you're a nature lover, a conservation enthusiast, or simply seeking a peaceful escape, the Ninoy Aquino Parks and Wildlife Center invites you to explore, learn, and contribute to the conservation of our environment.</p>
+  </div>
+</div>
+
+
+
+<div id="pro" class="tab-content">
+  <div class="content">
+    <section class="home">
+      <video id="promo-video" class="video-slide active" src="videos/teaser.mov" autoplay loop></video>
+      <button id="play-button" class="play-button" onclick="showVideoScreen()"  style="display: none;"></button>
+    </section>
+    <div id="video-screen" class="video-overlay">
+      <video id="main-video" controls>
+        <source src="videos/PROMOTIONAL VIDEO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="close-button" class="close-button" onclick="closeVideoScreen()">&times;</button>
+    </div>
+  </div>
+</div>
+
+<div id="act" class="tab-content">
+  <div class="content">
+    <div class="slide-container swiper">
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-1"></span>
+
+                      <div class="card-image">
+                          <img src="EXISITING/e6.PNG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <br>
+                      <p class="description"> Discover the perfect venue for your next event with our range of rental facilities! Our facilities open for reservations include Fishing Village, Amphitheater, Picnic Shed, Tea House, and Facility Use.</p>
+
+                      
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-2"></span>
+
+                      <div class="card-image">
+                          <img src="EXISITING/e1.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Fishing Village</h2>
+                      <p class="description">Facility Rental Fee: Php 2,500. Maximum of seventy (70) pax at a time.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-3"></span>
+
+                      <div class="card-image">
+                          <img src="EXISITING/e2.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Amphitheater</h2>
+                      <p class="description">Facility Rental Fee: Php 1,350.
+                          Electricity: +Php 100/hour.
+                          Maximum of two-hundred fifty (250) pax at a time.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-4"></span>
+
+                      <div class="card-image">
+                          <img src="EXISITING/e3.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Picnic Shed</h2>
+                      <p class="description">Facility Rental Fee: Php 500.
+                          Maximum of five (5) pax at a time.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-5"></span>
+
+                      <div class="card-image">
+                          <img src="EXISITING/e4.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Tea House</h2>
+                      <p class="description">Facility Rental Fee: Php 500.
+                          Maximum of thirty (30) pax at a time.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-6"></span>
+
+                      <div class="card-image">
+                          <img src="EXISITING/e5.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Facility Use</h2>
+                      <p class="description">Facility Rental Fee: Php 2,500/day.
+                          Prenup, Pre-Debut, or Other Professional Shoots.
+                          Standby Area for Makeup and Preparation.
+                          Shelter for the Group and Equipments.
+                          Once facility is rented, you are free to shoot around the park.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-7"></span>
+
+                      <div class="card-image">
+                          <img src="PROPOSED/p6.PNG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <br>
+                      <p class="description">Experience the beauty of the Ninoy Aquino Parks and Wildlife Center with our exciting lineup of activities designed to engage and inspire visitors of all ages.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-8"></span>
+
+                      <div class="card-image">
+                          <img src="PROPOSED/p1.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Litratour Capture Moments,
+                          <br> Explore Nature
+                      </h2>
+                      <p class="description">Discover the perfect blend of creativity and adventure with Litratour, an engaging activity designed for photography enthusiasts and nature lovers at the Ninoy Aquino Parks and Wildlife Center.
+Participants join guided tours led by professional photographers, exploring the park's lush landscapes, diverse wildlife, and vibrant flora. Participants will receive soft copies of their captured photos, which they can treasure and share. High-quality photo prints can be developed upon request for an additional charge, making it a perfect keepsake or gift for nature and photography enthusiasts.
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-9"></span>
+
+                      <div class="card-image">
+                          <img src="PROPOSED/p2.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Breathe in Nature Find Your 
+                          <br>
+                          Flow Where Nature Breathes
+                      </h2>
+                      <p class="description">Experience rejuvenation and serenity with Breathe in Nature, a revitalizing activity that invites participants to practice yoga and mindfulness in the tranquil natural setting of the Ninoy Aquino Parks and Wildlife Center.
+                          With scenic spots like the lagoon, picnic areas, and wildlife exhibits as a backdrop, this experience offers a perfect escape for wellness enthusiasts and locals seeking relaxation and inner peace. Combining the calming ambiance of nature with the restorative benefits of yoga, Breathe in Nature encourages harmony between mind, body, and the environment, making it an ideal retreat for those looking to recharge and reconnect.
+                          
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-10"></span>
+
+                      <div class="card-image">
+                          <img src="PROPOSED/p3.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">Canvas and Canopy <br> Where Art Dances with Nature</h2>
+                      <p class="description">Immerse yourself in creativity and culture with Canvas and Canopy, an inspiring artistic event held at the Ninoy Aquino Parks and Wildlife Center.
+                          This vibrant experience showcases the talents of local artists and eco-art enthusiasts through captivating art displays, cultural performances, and environmental awareness campaigns—all set against the park's picturesque landscape. With venues like the Amphitheater or Tea House, Canvas and Canopy brings together the local community and tourists to celebrate art, culture, and sustainability. It’s a celebration of creativity and advocacy, highlighting the profound connection between nature and human expression.
+                          
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-11"></span>
+
+                      <div class="card-image">
+                          <img src="PROPOSED/p4.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">AKBAY <br> For Every Moment Counts</h2>
+                      <p class="description">Connect & Celebrate is a monthly gathering at Ninoy Aquino Park, designed to bring together family, and colleagues in a fun, relaxing, and inspiring environment.
+                          Enjoy the beauty of nature while bonding over shared stories, laughter, and meaningful conversations. It’s more than just an event, it's a celebration of togetherness, where memories are made and connections are strengthened.
+                          
+                          </p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay" id="overlay-12"></span>
+
+                      <div class="card-image">
+                          <img src="PROPOSED/p5.JPG" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="pangalan">RentaRide <br> Wheels for Rent, Adventures for Free</h2>
+                      <p class="description">Park Pedals offers a hassle-free bike rental experience at Ninoy Aquino Parks and Wildlife Center, with no time limit to explore the park at your own pace.
+                          Rent a bike and cruise through lush landscapes, scenic pathways, and tranquil spots, soaking in the beauty of nature as you go. Whether you're looking for a peaceful ride or an active adventure, our bikes are the perfect way to enjoy the park for as long as you want.
+                          
+                          </p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+
+  </div> 
+</div>
+
+<!-- fac.html -->
+<div id="fac" class="tab-content">
+  <div class="content">
+    <div class="container">
+      <div class="slide">
+        <div class="item" style="background-image: url(FACILITIES/s15.JPG);">
+          <div class="content">
+            <div class="name">Basketball Court</div>
+            <div class="des">A recreational facility for sports enthusiasts and casual games within the park.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s1.JPG);">
+          <div class="content">
+            <div class="name">Ticket Booth</div>
+            <div class="des">The entry point where visitors can purchase admission tickets and receive park guides.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s2.JPG);">
+          <div class="content">
+            <div class="name">Lungsod Kalikasan</div>
+            <div class="des">A lush urban forest showcasing native Philippine plants and trees, serving as a haven for biodiversity and eco-awareness.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s3.JPG);">
+          <div class="content">
+            <div class="name">Parks Information Center</div>
+            <div class="des">A hub for visitors to learn about park features, activities, and conservation efforts.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s4.jpg);">
+          <div class="content">
+            <div class="name">Bulwagan Ninoy</div>
+            <div class="des">A multipurpose hall used for seminars, events, and gatherings within the park.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s5.JPG);">
+          <div class="content">
+            <div class="name">Wildlife Rescue Center</div>
+            <div class="des">A facility for rehabilitating injured, confiscated, or surrendered wild animals before their release back to nature.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s6.JPG);">
+          <div class="content">
+            <div class="name">Raptors Mammals and Reptiles</div>
+            <div class="des">Dedicated areas housing native Philippine species for education and awareness on wildlife conservation.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s7.JPG);">
+          <div class="content">
+            <div class="name">Amphitheatre</div>
+            <div class="des">An open-air venue for cultural performances, programs, and community events.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s8.jpg);">
+          <div class="content">
+            <div class="name">Fishing Village</div>
+            <div class="des">A serene spot where visitors can fish, relax, or enjoy the tranquil waters.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s9.jpg);">
+          <div class="content">
+            <div class="name">Tea House</div>
+            <div class="des">A small structure offering a peaceful space for reflection, surrounded by nature.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s10.JPG);">
+          <div class="content">
+            <div class="name">Picnic Shed</div>
+            <div class="des">Covered shelters providing a convenient spot for families and groups to enjoy meals outdoors.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s11.JPG);">
+          <div class="content">
+            <div class="name">Director's Office</div>
+            <div class="des">The administrative hub overseeing the operations and management of the park.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s12.jpg);">
+          <div class="content">
+            <div class="name">Biodiversity Management Bureau</div>
+            <div class="des">The main office coordinating biodiversity conservation efforts nationwide, located within the park.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s13.JPG);">
+          <div class="content">
+            <div class="name">Gazebo</div>
+            <div class="des">A charming structure perfect for small gatherings or relaxation amidst scenic views.</div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(FACILITIES/s14.JPG);">
+          <div class="content">
+            <div class="name">Parking Area</div>
+            <div class="des">A spacious and secure lot for visitors to park their vehicles conveniently.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttones">
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+<div id="vis" class="tab-content">
+  <div class="content">
+    <div class="gallery">
+      <div class="gallery-item">
+          <img src="PHOTOS/1.jpeg" alt="Image 1" onclick="openLightbox(this)">
+          <p> FAMILY: Making memories one adventure at a time.</p>
+      </div>
+      <div class="gallery-item">
+          <img src="PHOTOS/2.jpeg" alt="Image 2" onclick="openLightbox(this)">
+          <p>FRIENDS: Cheers to the friends who make every moment an adventure!</p>
+      </div>
+      <div class="gallery-item">
+          <img src="PHOTOS/4.jpeg" alt="Image 3" onclick="openLightbox(this)">
+          <p>SOLO: Adventure awaits, and I’m ready for it!</p>
+      </div>
+      <div class="gallery-item">
+          <img src="PHOTOS/3.jpeg" alt="Image 4" onclick="openLightbox(this)">
+          <p>COUPLE: Love grows like the flowers around us.</p>
+      </div>
+      <div class="gallery-item">
+          <img src="PHOTOS/5.jpeg" alt="Image 5" onclick="openLightbox(this)">
+          <p>LONG-TIME FRIENDSHIP: Years may pass, but our friendship remains timeless.</p>
+      </div>
+  </div>
+
+  </div>
+  </div>
+</div>
+
+
+<div id="res" class="tab-content">
+  <div class="content">
+    <div class="reservation-container">
+      <div class="reservation-form">
+        <h2>Book Your Reservation</h2>
+        <form
+              id="resForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              onsubmit="delForm(event)"
+              >
+        
+          <input type="hidden" name="access_key" value="d537bafb-4e7d-4649-986c-3c1b919a7b1f" />
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <input 
+              type="tel" 
+              name="phone" 
+              placeholder="Phone Number" 
+              maxlength="11" 
+              pattern="[0-9]{11}" 
+              required 
+              title="Phone number must be 11 digits"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
+            />
+          </div>                    
+          <div class="form-group">
+            <input type="date" name="reservation-date" required min="" id="reservation-date">
+          </div>
+          <div class="form-group">
+            <select name="activity" required>
+              <option value="" disabled selected>Activity/Facility Selection</option>
+              <option value="Fishing Village ">Fishing Village</option>
+              <option value="Tea House">Tea House</option>
+              <option value="Amphitheater">Amphitheater</option>
+              <option value="Picnic Shed">Picnic Shed</option>
+              <option value="Commercial Filming and Commercial Photography">Commercial Filming and Commercial Photography</option>
+          </select>
+          </div>
+          <button type="submit">Book Now</button>
+      </form>
+      </div>
+    </div>    
+  </div>
+</div>
+
+<div id="con" class="tab-content">
+  <div class="content">
+    <div class="contact-container">
+      <div class="contact-details">
+        <p><i class="fa fa-map-marker"></i> Elliptical Rd, Quezon City, Metro Manila</p>
+        <p><i class="fa fa-envelope"></i> napwc.inquiries@gmail.com</p>
+        <p><i class="fa fa-phone"></i> +63 907 132 4840</p>
+        <p><i class="fa fa-clock-o"></i> Mon - Sun 7:00 AM to 5:00 PM</p>
+      </div> 
+      <div class="contact-form">
+        <h2>Got Questions? We're Here to Help!</h2>
+        <form
+          id="contactForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          onsubmit="clearForm()"
+        >
+          <div class="form-group">
+            <input type="hidden" name="access_key" value="d537bafb-4e7d-4649-986c-3c1b919a7b1f" />
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="exp" class="tab-content">
+  <div class="content">
+    <div class="container">
+      <div class="slide-exp">
+          <div class="item-exp" style="background-image: url(ANIMALS/a15.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">White-Bellied Sea Eagle</div>
+                  <div class="des-exp">A powerful raptor with a striking white underbelly and dark wings, the white-bellied sea eagle is found in coastal areas throughout Southeast Asia. It preys on fish, birds, and small mammals and is known for its soaring flight and keen eyesight.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a1.jpg);">
+              <div class="content-exp">
+                  <div class="name-exp">Brahminy kite / Haliastur indus intermedius</div>
+                  <div class="des-exp">A majestic bird of prey, the Brahminy kite is easily recognized by its striking chestnut-colored body and white head. Known for its keen hunting skills, this raptor is often found near coastal areas, preying on fish and small animals.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a2.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Burmese rock python / Python bivittatus</div>
+                  <div class="des-exp">One of the largest snake species in the world, the Burmese rock python can grow up to 20 feet in length. Native to Southeast Asia, it is a non-venomous constrictor that hunts small mammals, birds, and reptiles.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a3.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Cockatiel / Nymphicus hollandicus</div>
+                  <div class="des-exp">A beloved pet bird with a distinct crest on its head and a cheerful, whistling call, the cockatiel is native to Australia. It is known for its playful personality and beautiful plumage, which often includes shades of grey, white, and yellow.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a4.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Common palm civet / Paradoxurus hermaphroditus philippinensis</div>
+                  <div class="des-exp">A nocturnal mammal with a raccoon-like appearance, the common palm civet is known for its ability to climb trees and forage for fruits, insects, and small vertebrates. It plays a crucial role in seed dispersal in its habitat.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a5.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Green-cheeked conure / Pyrrhura molinae</div>
+                  <div class="des-exp">A small, colorful parrot native to South America, the green-cheeked conure is known for its playful, affectionate nature. Its vivid green feathers and cheerful demeanor make it a popular companion bird.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a6.jpeg);">
+              <div class="content-exp">
+                  <div class="name-exp">Iguana</div>
+                  <div class="des-exp">A large, herbivorous reptile with a distinctive long tail and spiny crest running down its back, the iguana is native to Central and South America. It is an excellent climber and can often be found basking in the sun to regulate its body temperature.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a7.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Lar gibbon / Hylobates lar</div>
+                  <div class="des-exp">This agile primate is known for its long arms and impressive acrobatic abilities. Native to Southeast Asia, lar gibbons are primarily arboreal and communicate with a range of vocalizations, including loud calls that can carry for miles.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a8.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Nicobar pigeon / Caloenas nicobarica nicobarica</div>
+                  <div class="des-exp">Native to the Nicobar Islands, this striking pigeon is known for its iridescent feathers and distinctive greenish-blue sheen. The Nicobar pigeon plays an important role in forest ecology by dispersing seeds as it forages for fruits.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a9.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Philippine long-tailed macaque / Macaca fascicularis philippensis</div>
+                  <div class="des-exp">A subspecies of the macaque found throughout the Philippines, this intelligent and social primate has a long tail and a wide variety of vocalizations. It is highly adaptable and often found in forests, as well as urban areas.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a10.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Red-eared slider / Trachemys scripta elegans</div>
+                  <div class="des-exp">This freshwater turtle is easily identified by the distinctive red markings around its ears. Native to the United States, the red-eared slider is a popular pet and can often be seen basking in the sun along riverbanks or ponds.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a11.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Rose-ringed parakeet / Psittacula krameri</div>
+                  <div class="des-exp">A striking green parrot with a distinct rose-colored ring around its neck, the rose-ringed parakeet is native to Africa and South Asia. Known for its intelligence and ability to mimic human speech, it is a popular companion bird.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a12.jpg);">
+              <div class="content-exp">
+                  <div class="name-exp">Rufous Hornbill</div>
+                  <div class="des-exp">A large, majestic bird with a vivid orange and black plumage, the rufous hornbill is known for its striking casque (the large structure atop its beak) and its ability to produce loud, resonant calls. It is an important species in Southeast Asian rainforests.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a13.jpg);">
+              <div class="content-exp">
+                  <div class="name-exp">Saltwater Crocodile</div>
+                  <div class="des-exp">The largest living reptile, the saltwater crocodile is a formidable predator that can grow over 23 feet long. Found in coastal areas across Southeast Asia, it is known for its strength, speed, and ability to thrive in both saltwater and freshwater environments.</div>
+              </div>
+          </div>
+          <div class="item-exp" style="background-image: url(ANIMALS/a14.JPG);">
+              <div class="content-exp">
+                  <div class="name-exp">Tiger / Panthera tigris</div>
+                  <div class="des-exp">A symbol of strength and beauty, the tiger is one of the most iconic big cats in the world. With its orange coat marked by black stripes, the tiger is a powerful predator native to Asia and is known for its solitary nature and impressive hunting skills.</div>
+              </div>
+          </div>
+      </div>
+
+      <div class="buttones-exp">
+        <button class="prev-exp">&lt;</button>
+        <button class="next-exp">&gt;</button>
+    </div>
+  </div>
+</div> 
+
+<footer>
+  <p>
+    This website has been created solely as part of a school project and is intended for promotional purposes only. It is not intended for commercial use or to represent any official entity.
+  </p>
+</footer>
+
+</div>
+  <script type="text/javascript">
+  //Javascript of responsive navigation menu
+  const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
+
+  menuBtn.addEventListener("click", () =>{
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+  });
+
+  //Javascript for video slider navigation
+  const btns = document.querySelectorAll(".nav-btn");
+  const slides = document.querySelectorAll(".video-slide");
+  const contents = document.querySelectorAll(".content");
+
+  var sliderNav =  function(manual){
+    btns.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+
+    contents.forEach((content) => {
+      content.classList.remove("active");
+    });
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click",() => {
+      sliderNav(i);
+    });
+  });
+// Get the "About Us" button and the sections
+const aboutUsBtn = document.getElementById("about-us-btn");
+const homeSection = document.getElementById("home");
+const aboutUsSection = document.getElementById("about-us");
+
+function showTab(tabName) {
+  // Hide all tabs
+  let tabs = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => tab.style.display = 'none');
+  
+  // Show the selected tab
+  document.getElementById(tabName).style.display = 'block';
+
+  // Handle video play/stop logic
+  const video = document.getElementById('promo-video');
+  const playButton = document.getElementById("play-button");
+  if (tabName === 'pro') {
+    video.play();
+    setTimeout(() => {
+      playButton.style.display = "block"; // Make the button visible
+    }, 14000); // Play video if 'Promotional Video' tab is selected
+  } else {
+    video.pause(); // Pause video if switching to another tab
+    video.currentTime = 0; // Optionally reset video to the beginning
+  }
+}
+
+
+// Get the modal, button, and close element
+const modal = document.getElementById('about-us-panel');
+const btn = document.getElementById('about-us-btn');
+const closeBtn = document.querySelector('.close-btn');
+
+// When the user clicks the button, open the modal
+btn.onclick = function (e) {
+  e.preventDefault(); // Prevent default link behavior
+  modal.style.display = 'block';
+};
+
+// When the user clicks on the close button, close the modal
+closeBtn.onclick = function () {
+  modal.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+function clearForm() {
+    setTimeout(() => {
+      document.getElementById("contactForm").reset();
+    }, 1000); // Small delay to ensure form submission happens before reset
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+        const today = new Date().toISOString().split("T")[0];
+        document.getElementById("reservation-date").setAttribute("min", today);
+        });
+
+  function delForm(event) {
+    setTimeout(() => {
+      document.getElementById("resForm").reset();
+    }, 1000); // Small delay to ensure form submission happens before reset
+  }
+  let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(items[0]);
+        });
+
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').prepend(items[items.length - 1]);
+        });
+function openLightbox(image) {
+    const lightbox = document.getElementById("image-lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    lightbox.style.display = "flex";
+    lightboxImage.src = image.src;
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById("image-lightbox");
+    lightbox.style.display = "none";
+}
+let next2 = document.querySelector('.next-exp');
+        let prev2 = document.querySelector('.prev-exp');
+
+        next2.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item-exp');
+            document.querySelector('.slide-exp').appendChild(items[0]);
+        });
+
+        prev2.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item-exp');
+            document.querySelector('.slide-exp').prepend(items[items.length - 1]);
+        });
+        document.getElementById('facilities-tab').addEventListener('click', () => {
+      const contentArea = document.getElementById('content-area');
+
+    
+    });
+    function showVideoScreen() {
+  const promoVideo = document.getElementById("promo-video");
+  const videoScreen = document.getElementById("video-screen");
+  const mainVideo = document.getElementById("main-video");
+
+  promoVideo.pause(); // Pause the promo video
+  videoScreen.style.display = "flex"; // Show the video screen
+  mainVideo.play(); // Play the main video
+}
+
+function closeVideoScreen() {
+  const promoVideo = document.getElementById("promo-video");
+  const videoScreen = document.getElementById("video-screen");
+  const mainVideo = document.getElementById("main-video");
+
+  videoScreen.style.display = "none"; // Hide the video screen
+  mainVideo.pause(); // Pause the main video
+  promoVideo.play(); // Resume the promo video
+}
+
+
+  </script>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
